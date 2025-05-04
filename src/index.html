@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      .gradient {
+        background-image: linear-gradient(to bottom right, #4c51bf, #702459);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navikasi bar start -->
+    <section class="w-screen mx-auto px-4">
+      <nav class="flex flex-wrap p-6 justify-between">
+        <div class="flex flex-shrink-0 motion-safe:r-6">
+          <a href="#" class="h-10 w-50 mr-2">Damayanti</a>
+        </div>
+        <div class="block lg:hidden">
+          <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </a>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">About me</a>
+            <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">Recent Work</a>
+            <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">Skill Framework</a>
+            <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">Contact me</a>
+          </div>
+          <div>
+            <a href="#" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0"> Contact me </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Navigasi bar end -->
+    <!-- About me start -->
+    <section class="w-screen mx-auto py-4 gradient">
+      <div class="px-16 py-8 text-center text-white">
+        <h1 class="w-full text-5xl font-bold">About Me</h1>
+        <div class="mb-4">
+          <div class="bg-pink-500 w-1/4 opacity-75 rounded h-1 mx-auto"></div>
+        </div>
+        <h2 class="text-3xl font-bold mb-2">Hay, aku Damayanti. Senang berjumpa dengan anda.</h2>
+        <h3 class="text-lg mb-2">Saya adalah seorang Web Developer, belajar web programing itu mudah dan menyenangkan bukan. bukan!!!</h3>
+        <div class="w-full">
+          <div class="px-4 py-4">
+            <img src="/img/yanti2.jpeg" class="shadow-lg rounded-full mx-auto text-center w-32 h-32 object-cover object-center" />
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+          <i class="fas fa-laptop-code fa-5x text-blue-500 mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Programing</p>
+            <p class="text-gray-600 text-base mb-2">PHP</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">.NET</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">C++</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Java</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-blue-500 md:bg-red-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portfolio</button>
+          </div>
+        </div>
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+          <i class="fas fa-pencil-ruler text-red-500 fa-5x mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Design</p>
+            <p class="text-gray-600 text-base mb-2">CSS</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Logo</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Mobile</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">UI</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-blue-500 md:bg-red-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portfolio</button>
+          </div>
+        </div>
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+          <i class="fas fa-database text-green-500 fa-5x mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Database</p>
+            <p class="text-gray-600 text-base mb-2">MySQL</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">SQL Server</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Oracle</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">PostgreSQL</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-blue-500 md:bg-red-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portfolio</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About me end -->
+    <!-- Skill start -->
+    <section class="w-screen mx-auto py-4 bg-white">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+          <img src="/img/project.jpg" class="max-w-full rounded-lg shadow-lg" />
+        </div>
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4 bg-pink-500 h-32"></div>
+      </div>
+    </section>
+    <!-- Skill end -->
+    <!-- recent work start -->
+    <section class="w-screen mx-auto py-4 bg-gray-300 h-32">Recent work</section>
+    <!-- Recent work end -->
+    <!-- Contact start -->
+    <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">Contact me</section>
+    <!-- Contact end -->
+    <!-- Footer start -->
+    <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
+    <!-- Footer end -->
+    <script src="https://kit.fontawesome.com/d3d1dbf371.js" crossorigin="anonymous"></script>
+  </body>
+</html>
