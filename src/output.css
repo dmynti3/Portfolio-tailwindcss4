@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-700: oklch(48.8% 0.243 264.376);
@@ -205,8 +206,14 @@
       max-width: 96rem;
     }
   }
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
   .m-3 {
     margin: calc(var(--spacing) * 3);
+  }
+  .m-8 {
+    margin: calc(var(--spacing) * 8);
   }
   .m-16 {
     margin: calc(var(--spacing) * 16);
@@ -255,6 +262,9 @@
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
   }
   .ml-auto {
     margin-left: auto;
@@ -395,6 +405,9 @@
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
   .bg-indigo-700 {
     background-color: var(--color-indigo-700);
   }
@@ -406,6 +419,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
   }
   .fill-current {
     fill: currentcolor;
@@ -433,6 +449,9 @@
   }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -558,6 +577,16 @@
       }
     }
   }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
+    }
+  }
   .md\:w-4\/12 {
     @media (width >= 48rem) {
       width: calc(4/12 * 100%);
@@ -571,6 +600,11 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .md\:bg-red-500 {
